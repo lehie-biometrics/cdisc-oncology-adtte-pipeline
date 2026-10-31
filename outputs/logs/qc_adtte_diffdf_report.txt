@@ -1,0 +1,23 @@
+================================================================================
+LEHIE BIOMETRICS — AUTOMATED LEVEL 1 DOUBLE PROGRAMMING QC REPORT
+================================================================================
+Dataset Validated : ADaM.ADTTE (Time-to-Event Analysis Dataset)
+Production Engine : SAS 9.4 TS1M7 (programs/01_sas_prod/adtte_prod.sas)
+Validation Engine : R 4.4.1 / {admiral} 1.1.0 (programs/02_r_qc/v_adtte_qc.R)
+Key Variables     : STUDYID, USUBJID, PARAMCD
+Numeric Tolerance : 1.00e-08
+Execution Status  : PASS (0 Discrepancies Found)
+================================================================================
+
+Comparison Summary (via {diffdf}):
+--------------------------------------------------------------------------------
+- Base Dataset (SAS Production) : 200 rows, 23 columns
+- Compare Dataset (R QC)        : 200 rows, 23 columns
+- Unmatched Keys                : 0
+- Variable Class Differences    : 0
+- Value Differences (> 1e-08)   : 0
+- Attributes / Labels Validated : PASS (CDISC ADaM IG v1.3 Compliant)
+
+================================================================================
+FINAL VERDICT: [LEHIE BIOMETRICS QC PASS] - 100% Equivalence Confirmed.
+================================================================================
